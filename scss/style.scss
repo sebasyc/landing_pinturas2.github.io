@@ -41,6 +41,14 @@ html, body {
 		@media (max-width: 768px) {
 			height: 420px;
 		}
+		@media (max-width: 480px) {
+			height: 300px;
+		}
+		&.bg-first {
+			@media (max-width: 480px) {
+				height: 420px;
+			}
+		}
 		.logo-pintura {
 			position: absolute;
 			width: 400px;
@@ -199,6 +207,10 @@ html, body {
 						color: $gray-txt;
 						transition: .3s;
 						@include appearance(none);
+						@include placeholder {
+							font-size: .875em;
+							color: #999999;
+						}
 						&:focus {
 							box-shadow: 0 5px 20px rgba(255,180,3,.5);
 						}
@@ -260,9 +272,9 @@ html, body {
 								position: absolute;
 								visibility: hidden;
 								&:checked + label {
-									background-color: black;
-									border-color: black;
-									color: $yellow;
+									background-color: $yellow;
+									border-color: $yellow;
+									color: white;
 									box-shadow: 0 10px 20px rgba(255,180,3,.5);
 								}
 							}
@@ -373,6 +385,15 @@ html, body {
 							@media (max-width: 991px) {
 								width: 100%;
 							}
+						}
+					}
+				}
+			}
+			&.step2 {
+				.landing-form {
+					&__inputs {
+						label {
+							text-align: left;
 						}
 					}
 				}
