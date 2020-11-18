@@ -16,7 +16,12 @@
 <body>
 
 	<section class="landing-content">
-		<div class="landing-content__bg-img"><img src="images/logo-pintura.svg" class="logo-pintura"></div>
+		<div class="landing-content__bg-img">
+			<div class="content-campaign">
+				<img src="images/logo-pintura.svg" class="logo-pintura">
+				<img src="images/img_landing.png" class="img-campaign">
+			</div>
+		</div>
 		<div class="landing-content__bg-space"></div>
 		<div class="container content">
 			<div class="row landing-row">
@@ -31,6 +36,10 @@
 						<div class="landing-form__inputs">
 							<label>Nº boleta</label>
 							<input type="number" id="boleta" placeholder="Ingresa aquí el número de tu boleta">
+						</div>
+						<div class="landing-form__inputs">
+							<label for="myfile">Subir boleta</label>
+							<input type="file" id="myfile" name="myfile">
 						</div>
 						<div class="landing-form__check">
 							<label>Área(s) de compra preferida(s)</label>
